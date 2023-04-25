@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    init: true
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules/
+    ports:
+      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:9229:9229"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://root:example@mongo:27017"
+      MONGO_DB: "feroot-starter-be"
+
+  mongo:
+    image: mongo:5.0
+    restart: no
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongo:/data/db
+    ports:
+      - "127.0.0.1:27017:27017"
+
+volumes:
+  mongo:

@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "coverage", "**/*.test.ts"]
+}
