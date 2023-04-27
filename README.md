@@ -13,7 +13,7 @@ Features:
 - Sample working endpoint reading from the DB
 - Migration with sample data in the DB
 
-Want to use PostgreSQL, Nest.js or Fastify? No problem at all. Feel free to change this started the way you like after cloning, or use another started from the internet. Remember it supposed to save time for YOU.
+Want to use PostgreSQL, Nest.js or Fastify? No problem at all. Feel free to change this starter the way you like after cloning it, or use another starter from the internet. Remember it is supposed to save time for YOU.
 
 ## Getting started
 
