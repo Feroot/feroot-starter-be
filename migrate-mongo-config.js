@@ -1,6 +1,6 @@
 const config = {
   mongodb: {
-    url: process.env.MONGO_URI || "mongodb://root:example@localhost:27017",
+    url: process.env.MONGO_URI || "mongodb://root:example@127.0.0.1:27017",
     databaseName: "feroot-starter-be",
 
     options: {

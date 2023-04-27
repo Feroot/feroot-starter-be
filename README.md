@@ -27,7 +27,7 @@ Then, execute migrations to insert sample user to your DB:
 ```sh
 npx migrate-mongo up
 ```
-Now if you navigate to `http://localhost:3000/user/me` you should see a JSON object describing a sample user.
+Now if you navigate to `http://127.0.0.1:3000/user/me` you should see a JSON object describing a sample user.
 
 ## Useful commands
 ```bash
